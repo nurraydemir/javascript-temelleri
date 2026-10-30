@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yapılacaklar Listesi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="uygulama">
+
+            <h1>Yapılacaklar Listesi</h1>
+
+            <p class="aciklama">
+                Planla, tamamla ve ilerle!
+            </p>
+
+            <div class="gorev-ekleme">
+                <input
+                    type="text"
+                    id="gorevInput"
+                    placeholder="Bugün ne yapacaksın?"
+                >
+
+                <button id="ekleButonu" type="button">
+                    Ekle
+                </button>
+            </div>
+
+            <p id="mesaj"></p>
+
+            <div class="istatistik">
+                <span id="gorevSayisi">Toplam: 0</span>
+                <span id="tamamlananSayisi">Tamamlanan: 0</span>
+            </div>
+
+            <ul id="gorevListesi"></ul>
+
+            <p class="alt-yazi">
+                Küçük adımlar, büyük ilerlemeler..
+            </p>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

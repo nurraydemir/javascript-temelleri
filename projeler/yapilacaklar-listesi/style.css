@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 16px;
+    background: #f1f3f9;
+    font-family: Arial, sans-serif;
+    color: #25263a;
+}
+
+.uygulama {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.aciklama {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #74768a;
+}
+
+.gorev-ekleme {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    min-width: 0;
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #d8d9e3;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 11px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #5548c8;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.istatistik {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 12px 0;
+    color: #66677b;
+    font-size: 14px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.gorev {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #e5e5ed;
+    border-radius: 9px;
+}
+
+.gorev input {
+    flex: none;
+    width: 17px;
+    height: 17px;
+}
+
+.gorev-metni {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.gorev-tamamlandi {
+    color: #888;
+    text-decoration: line-through;
+}
+
+.sil-butonu {
+    padding: 8px 10px;
+    background: #d94b58;
+}
+
+#mesaj {
+    min-height: 20px;
+    color: #5548c8;
+    font-size: 14px;
+}
+
+.alt-yazi {
+    margin-top: 25px;
+    text-align: center;
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .uygulama {
+        padding: 20px 15px;
+    }
+
+    .istatistik {
+        flex-direction: column;
+    }
+
+    .gorev {
+        flex-wrap: wrap;
+    }
+}
