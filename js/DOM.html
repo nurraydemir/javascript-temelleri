@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM</title>
+</head>
+<body>
+
+    <h1>JavaScript DOM Konusu</h1>
+
+    <h2>1-9. DOM ve Document</h2>
+    <p id="domSonuc"></p>
+    <p id="tekrar"></p>
+    <p id="documentBilgi"></p>
+    <p id="ozellikler"></p>
+    <p id="metotlar"></p>
+    <h3 id="baslik">Eski Baslik</h3>
+    <p>Birinci paragraf</p>
+    <p>Ikinci paragraf</p>
+    <p id="diziBilgi"></p>
+    <p id="tekrarSonuc"></p>
+
+    <hr>
+
+    <h2>10-16. HTML Olaylari</h2>
+    <button onclick="selamVer()">Selam Ver</button>
+    <p id="olaySonuc"></p>
+
+    <p id="renkliYazi">Bu yazinin rengini degistir.</p>
+    <button onclick="renkDegistir()">Rengi Degistir</button>
+
+    <p onclick="kendiniDegistir(this)">Bu yaziyi tikla.</p>
+
+    <br>
+    <input type="text" id="sonucKutusu" placeholder="Deger atanacak kutu">
+    <button onclick="degerAta()">Deger Ata</button>
+
+    <p id="yuklenme"></p>
+
+    <button onclick="olayTekrari()">Olayi Calistir</button>
+    <p id="olayTekrarSonuc"></p>
+
+    <hr>
+
+    <h2>17-21. Window ve Zamanlayicilar</h2>
+    <p id="windowBilgi"></p>
+
+    <button onclick="baglantiAc()">Google'i Ac</button>
+
+    <br><br>
+    <button onclick="gecikmeliCalistir()">3 Saniye Sonra Calistir</button>
+    <p id="zamanSonuc"></p>
+
+    <button onclick="sayaciBaslat()">Sayaci Baslat</button>
+    <button onclick="sayaciDurdur()">Sayaci Durdur</button>
+    <p>Sayac: <span id="sayac">0</span></p>
+
+    <button onclick="pencereBilgisi()">Pencere Bilgisi</button>
+
+    <hr>
+
+    <h2>22-26. Tarayici Nesneleri ve Referans</h2>
+    <p id="navigatorBilgi"></p>
+    <p id="screenBilgi"></p>
+    <p id="locationBilgi"></p>
+    <p id="historyBilgi"></p>
+    <p id="referans"></p>
+
+    <script src="javascript-dom.js"></script>
+</body>
+</html>
